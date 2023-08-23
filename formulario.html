@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </div>
+    <h1 id="contact">Contacto</h1>
+    <form method="get" action="formulario.html">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+    
+        <label>Género:</label>
+        <input type="radio" id="genero-masculino" name="genero" value="masculino" required>
+        <label for="genero-masculino">Masculino</label>
+        <input type="radio" id="genero-femenino" name="genero" value="femenino" required>
+        <label for="genero-femenino">Femenino</label><br><br>
+    
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br><br>
+    
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+    
+        <label for="ciudad">Ciudad:</label>
+        <select id="ciudad" name="ciudad">
+            <option value="guadalajara">Guadalajara</option>
+            <option value="zapopan">Zapopan</option>
+            <option value="tonala">Tonalá</option>
+            <option value="tlaquepaque">Tlaquepaque</option>
+        </select><br><br>
+    
+        <input type="checkbox" id="interes" name="interes" value="si">
+        <label for="interes">Me interesa contratarte</label><br><br>
+    
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
